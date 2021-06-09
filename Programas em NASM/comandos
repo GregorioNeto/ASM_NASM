@@ -1,0 +1,24 @@
+-------------------------------------------------NASM----------------------------------------------------------------------------------------
+
+'-Para montar o programa, escreva---->
+ nasm -f elf hello.asm.
+
+'-Para ligar o arquivo objeto e criar um arquivo executável
+chamado hello, escreva------>
+ ld -m elf_i386 -s -o hello hello.o.
+
+'-Execute o programa escrevendo---->
+ ./hello.
+
+-----------------------------------------------------NASM-C--------------------------------------------------------------------------------
+
+gcc -c -m32 maincopy_file.c
+
+
+nasm -f elf32 copy_file.asm
+
+
+ gcc -m32 -o app copy_file.o maincopy_file.o
+
+
+
